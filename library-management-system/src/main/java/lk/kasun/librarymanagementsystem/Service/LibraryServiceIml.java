@@ -15,7 +15,7 @@ import java.util.List;
 public class LibraryServiceIml implements LibraryService {
 
     @Autowired
-    LibraryRepo libraryRepo;
+    LibraryRepo libraryRepo1;
 
     @Override
     public List<Student> getReserveDetails(){
