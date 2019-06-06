@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/library")
+@CrossOrigin
 public class LibrarySystemController {
 
 

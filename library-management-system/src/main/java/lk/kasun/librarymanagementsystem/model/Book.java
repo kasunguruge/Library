@@ -11,7 +11,7 @@ public class Book {
 
 
     @Id
-            @GeneratedValue(strategy = GenerationType.AUTO)
+            @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
     String name;
 

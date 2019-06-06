@@ -3,16 +3,17 @@ package lk.kasun.librarymanagementsystem.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.data.repository.cdi.Eager;
 
 import javax.persistence.*;
 import java.util.List;
-
+@Eager
 @Entity
 @Table(name = "Students")
 public class Student {
 
     @Id
-            @GeneratedValue(strategy = GenerationType.AUTO)
+            @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
     String name;
 
