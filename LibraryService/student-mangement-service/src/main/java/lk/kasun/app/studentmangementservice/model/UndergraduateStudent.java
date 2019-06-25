@@ -1,21 +1,19 @@
-package lk.kasun.app.librarysystem.model;
+package lk.kasun.app.studentmangementservice.model;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
 
 @Entity
-public class LendingBook {
+public class UndergraduateStudent {
 
     @Id
             @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
-    @NotNull
-    String name;
-    Integer bookCount;
 
+    String name;
 
     public Integer getId() {
         return id;
@@ -32,6 +30,4 @@ public class LendingBook {
     public void setName(String name) {
         this.name = name;
     }
-
-
 }

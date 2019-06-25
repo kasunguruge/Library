@@ -1,9 +1,12 @@
 package lk.kasun.app.librarysystem.model;
 
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
+@Entity
 public class Member {
 
+    @Id
+            @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
 
 
