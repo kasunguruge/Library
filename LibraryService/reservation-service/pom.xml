@@ -8,11 +8,11 @@
         <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>lk.kasun.librarySystem</groupId>
-    <artifactId>library-system</artifactId>
+    <groupId>lk.kasun.libraryService</groupId>
+    <artifactId>reservation-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>library-system</name>
-    <description>Library system for the library</description>
+    <name>reservation-service</name>
+    <description>Book reservation service for library system</description>
 
     <properties>
         <java.version>1.8</java.version>

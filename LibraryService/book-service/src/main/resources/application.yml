@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/LibrarySystemDB?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/BookDB?createDatabaseIfNotExist=true
     username: root
     password: en
     driver-class-name: com.mysql.jdbc.Driver

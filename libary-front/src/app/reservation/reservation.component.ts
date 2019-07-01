@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core/Component';
 import { Observable, Observer } from 'rxjs';
-import {HttpClient} from '@angular/common/http';
 import { ReservationService } from '../reservation.service';
 import { Students } from '../students';
-import { forEach } from '@angular/router/src/utils/collection';
+
 @Component({
   selector: 'app-reservation',
   templateUrl: './reservation.component.html',
@@ -14,7 +13,7 @@ export class ReservationComponent implements OnInit {
   reservation: Observable<Students[]>;
   books:Object[];
   constructor(private restclient:ReservationService) { }
-  
+
   ngOnInit() {
 
     // this.restclient.getBooks().subscribe(
@@ -22,7 +21,7 @@ export class ReservationComponent implements OnInit {
     //      (err)=> console.log(err)
     // );
     this.upDate();
-    
+
   }
   upDate(){
     this.reservation=this.restclient.getBooks();
@@ -30,8 +29,8 @@ export class ReservationComponent implements OnInit {
   deleteReservations(id:Number){
     console.log(id);
     this.restclient.deleteReservations(id).subscribe((d)=>
-    
+
     this.upDate());
-    
+
   }
 }

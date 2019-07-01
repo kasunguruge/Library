@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>lk.kasun.librarySystem</groupId>
-    <artifactId>library-system</artifactId>
+    <artifactId>registration-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>library-system</name>
-    <description>Library system for the library</description>
+    <name>registration-service</name>
+    <description>Registration of the members of library</description>
 
     <properties>
         <java.version>1.8</java.version>
